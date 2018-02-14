@@ -1,0 +1,53 @@
+    1  clear
+    2  yum install git -y
+    3  clear
+    4  cd /tmp
+    5  git clone https://github.com/jonas/tig.git
+    6  clear
+    7  cd tig
+    8  yum install gcc ncurses-devel ncurses
+    9  gcc
+   10  clear
+   11  make
+   12  make install
+   13  tig
+   14  cd ..
+   15  clear
+   16  ls
+   17  clear
+   18  rm -rf tig/
+   19  git clone https://github.com/JnCV17/so-workshop2.git
+   20  so-workshop2
+   21  ls
+   22  cd so-workshop2/
+   23  ls
+   24  tig
+   25  touch message_1.txt
+   26  ls
+   27  git status
+   28  git add message_1.txt
+   29  git status
+   30  git reset message_1.txt 
+   31  git status
+   32  git reset
+   33  git status
+   34  git branch
+   35  git checkout -b A00320192/workshop2
+   36  git branch
+   37  git branch -d A00320192/workshop2
+   38  git checkout master
+   39  git branch -d A00320192/workshop2
+   40  clear
+   41  git checkout -b jvillada/workshop2
+   42  git add message_1.txt
+   43  git status
+   44  git commit -m "Add message_1.txt"
+   45  git config --global user.name "Juan Villada"
+   46  git config -- global user.email jncvg17@hotmail.com
+   47  git config --global user.email jncvg17@hotmail.com
+   48  clear
+   49  git status
+   50  tig
+   51  cat .git/config
+   52  git push origin jvillada/workshop2
+   53  history > command_list.txt
