@@ -10,4 +10,4 @@
 #### Llamadas al Sistema
 - **sysinfo:** Retorna información generalizada de estadísticas del sistema, [mas información](https://www.unix.com/man-page/centos/2/sysinfo/).
 - **getuid:** Retorna la identidad del usuario [mas información](https://www.unix.com/man-page/centos/2/getuid/).
-- **getcpu:**Retorna la cpu sobre la que se ejecuta el hilo actual, [mas información](http://man7.org/linux/man-pages/man2/getcpu.2.html).
+- **getcpu:** Retorna la cpu sobre la que se ejecuta el hilo actual, [mas información](http://man7.org/linux/man-pages/man2/getcpu.2.html).
