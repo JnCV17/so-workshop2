@@ -3,7 +3,7 @@
 **Universidad ICESI**  
 **Curso:** Sistemas Operativos  
 **Tema:** Llamadas al sistema (Syscalls)  
-**Estudiante:** Juan Camilo Villada G. 
+**Estudiante:** Juan Camilo Villada G.  
 **Código:** A00320192  
 **Correo:** jncvg17@hotmail.com
 
