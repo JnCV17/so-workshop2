@@ -2,7 +2,7 @@
 ### Taller 2
 **Universidad ICESI**  
 **Curso:** Sistemas Operativos  
-**Tema:** Llamadas al sistema (Syscalls)
+**Tema:** Llamadas al sistema (Syscalls)  
 **Estudiante:** Juan Camilo Villada G. 
 **Código:** A00320192  
 **Correo:** jncvg17@hotmail.com
