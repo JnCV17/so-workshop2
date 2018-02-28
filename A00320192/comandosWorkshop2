@@ -1,0 +1,98 @@
+    1  ip addr
+    2  yum install openssh openssh-server openssh-clients openssl-libs
+    3  ip addr
+    4  systemctl start sshd.service
+    5  shutdown
+    6  poweroff
+    7  cd /t
+    8  cd /tmp/
+    9  cd so-syscalls/
+   10  cd 02
+   11  cd 02_strace/
+   12  ls
+   13  mkdir sources
+   14  cd sources/
+   15  vim mistery.py
+   16  strace -etrace=write python mistery.py
+   17  cd
+   18  cd /
+   19  cd tmp/
+   20  git clone https://github.com/jvns/kernel-module-fun.git
+   21  cd kernel-module-fun/
+   22  UNAME=$(uname -r)
+   23  yum install gcc kernel-devel-${UNAME%.*}
+   24  sudo yum install git -y
+   25  yum install strace
+   26  cd /tmp/
+   27  git clone https://github.com/jonas/tig.git
+   28  cd tig/
+   29  yum install gcc ncurses-devel ncurses -y
+   30  make
+   31  make install
+   32  tig
+   33  strace -etrace=exit_group /usr/bin/true
+   34  strace -etrace=sendto ping -c 1 127.0.0.1
+   35  cd
+   36  strace python -c ""
+   37  yum install vim
+   38  cd /tmp/
+   39  git clone https://github.com/ICESI/so-syscalls.git
+   40  ls
+   41  cd so-syscalls/
+   42  ls
+   43  cd 02_strace/
+   44  ls
+   45  cd /tmp/
+   46  cd kernel-module-fun/
+   47  make all
+   48  sudo insmod hello.ko
+   49  yum install gcc kernel-devel-${UNAME%.*}
+   50  make all
+   51  sudo insmod hello.ko
+   52  dmesg | tail
+   53  lsmod
+   54  cd ..
+   55  cd so-syscalls/
+   56  cd 01_intro/
+   57  ls
+   58  cd sources/
+   59  ls
+   60  vim makefile
+   61  mv makefile Makefile
+   62  ls
+   63  make example_01
+   64  ls
+   65  ip addr
+   66  systemctl network restart
+   67  systemctl restart network
+   68  poweroff
+   69  cd /tmp/
+   70  cd so-workshop2/
+   71  cd jvillada/
+   72  ls
+   73  mv README.md /tmp/so-workshop2/
+   74  ls
+   75  cd ..
+   76  vim README.md 
+   77  cd jvillada/
+   78  mv README.md /tmp/so-workshop2/
+   79  cd ..
+   80  vim README.md 
+   81  cd jvillada/
+   82  vim systemCommands.c
+   83  gcc systemCommands.c -o systemCommands.o
+   84  vim systemCommands.c
+   85  gcc systemCommands.c -o systemCommands.o
+   86  ./systemCommands.o 
+   87  strace ./systemCommands.o 
+   88  vim Makefile
+   89  rm systemCommands.o
+   90  cat Makefile 
+   91  make compileSyscalls
+   92  vim Makefile
+   93  ls
+   94  make compileSyscalls
+   95  vim Makefile
+   96  make compileSyscalls
+   97  ls
+   98  history > comandosWorkshop2
